@@ -4,7 +4,7 @@ I love radix themes, sadly it does not provide a datepicker.
 
 I think [react-datepicker](https://www.npmjs.com/package/react-datepicker) is a solid package, but it's ugly by default.
 
-I have styled it to be compatible with the radix theme you might already be using, and compatible with dark mode.
+I have styled it to be compatible with the radix theme you might already be using, inheriting colors, radius settings, and light/dark mode.
 
 ## Default looks
 
