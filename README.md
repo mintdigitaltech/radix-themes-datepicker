@@ -1,54 +1,29 @@
-# React + TypeScript + Vite
+# Radix Themes Datepicker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I love radix themes, sadly it does not provide a datepicker.
 
-Currently, two official plugins are available:
+I think [react-datepicker](https://www.npmjs.com/package/react-datepicker) is a solid package, but it's ugly by default.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I have styled it to be compatible with the radix theme you might already be using, inheriting colors, radius settings, and light/dark mode.
 
-## Expanding the ESLint configuration
+## Default looks
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<img width="229" alt="Screenshot 2025-05-03 at 1 01 25 AM" src="https://github.com/user-attachments/assets/7967066b-016b-46be-a8fc-3609bd0df395" />
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Improved looks
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Light theme
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+<img width="395" alt="Screenshot 2025-05-03 at 1 01 48 AM" src="https://github.com/user-attachments/assets/c5e5cfc2-64e9-4206-bbfa-1f9ed1f886ea" />
+
+Dark theme
+
+<img width="404" alt="Screenshot 2025-05-03 at 1 02 10 AM" src="https://github.com/user-attachments/assets/73351e88-45af-47e0-8fb6-e22d616ec602" />
+
+
+## Stackblitz Demo
+
+[Stackblitz Demo](https://stackblitz.com/edit/vitejs-vite-kjiuylts?file=src%2FApp.tsx)
+
+_I will build a npm package when I have time, not sure if this is useful to anyone other than myself._
