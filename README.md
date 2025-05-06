@@ -42,9 +42,3 @@ Dark theme
 
 <img width="404" alt="Screenshot 2025-05-03 at 1 02 10 AM" src="https://github.com/user-attachments/assets/73351e88-45af-47e0-8fb6-e22d616ec602" />
 
-
-Put somewhere in your main file:
-
-```import "radix-themes-datepicker-styles";```
-
-The end.
